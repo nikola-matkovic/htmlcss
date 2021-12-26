@@ -1,0 +1,112 @@
+*{
+	box-sizing: border-box;
+	border-collapse: collapse;
+	margin:0;
+}
+body{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 100vh;
+	background: linear-gradient(to bottom right, red,  orange, white)
+}
+#šporet{
+	border: 3px solid black;
+	width: 500px;
+	height: 400px;
+	background-color: gold;
+	position:relative;
+}
+#prvi {
+	border-bottom: 3px solid black;
+	width: 100%;
+	height: 60%;
+	display: flex;
+}
+#za-lozenje {
+	width: 40%;
+	height: 100%;
+}
+#vatra {
+	border: 3px solid black;
+	width: 70%;
+	height: 30%;
+	margin: 10% 15%;
+}
+#pepeo {
+	border: 3px solid black;
+	width: 70%;
+	height: 30%;
+	margin: 20% 15% 10%;
+}
+
+#pepeo, #vatra, #rerna, #fioka, #za-pecenje{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#za-pecenje{
+	width: 60%;
+	display: i
+}
+#rerna{
+	border: 5px solid black;
+	width: 80%;
+	height: 70%;
+}
+.drska{
+	width: 60%;
+	height: 5px;
+	background: black;
+}
+
+#rerna .drska{
+	margin-bottom : 90px;
+}
+#drugi{
+	display : flex;
+	height: 35%;
+	width: 100%;
+
+}
+.prazan-prostor{
+	width: 20%;
+	height: 100%;
+
+}
+#fioka{
+	width: 60%;
+	height: 100%;
+	border: 3px solid black;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+#treci{
+	background-color:black;
+	height: 5%;
+	width:100%;
+}
+
+#šporet::after{
+	content: '';
+	position:absolute;
+	top:15%;
+	right:-102px;
+	width:99px;
+	height:45px;
+	background: white;
+	background: linear-gradient(to right, gray, black);
+	border-left: 0;
+	border-right: 0;
+}
+#šporet::before{
+	content: '';
+	position:absolute;
+	top:-204px;
+	right:-151px;
+	width:45px;
+	height:300px;
+	background: linear-gradient(to bottom right, gray, black, gray);
+	border: 4px solid black;
+}
