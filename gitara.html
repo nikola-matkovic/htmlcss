@@ -1,0 +1,95 @@
+<div id="prvi-krug">
+  <p></p>
+</div>
+<div id="drugi-krug">
+<p id="krug">
+</p>
+</div>
+<div id="drska"></div>
+<div id="zice">
+	<div></div>
+  	<div></div>
+</div>
+
+<style>
+  :root{
+    --prvi : 120px;
+    --drugi : 100px;
+  }
+  body{
+    background: #F3AC3C;
+  }
+#prvi-krug{
+  width: var(--prvi);
+  height: var(--prvi);
+  background: #998235;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  left: 45px;
+  display: flex;
+  align-items:center;
+}
+  #prvi-krug p{
+    width: 10px;
+    height: 40px;
+    background: #1A4341;
+ 	transform: translateX(40px);
+    border-radius: 5px;
+  }
+#drugi-krug{
+  width: var(--drugi);
+  height: var(--drugi);
+  background: #998235;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  left: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+  #krug{
+    width: 50px;
+    height: 50px;
+    background: #1A4341;
+    border-radius: 50%;
+    border: 5px solid  #F3AC3C;
+    box-sizing: border-box;
+  }
+  #drska {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    background: #1A4341;
+    width: 120px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+  #zice{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+  	background: #998235;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+    flex-direction: column;
+    
+  }
+  #zice div{
+    width : 20px;
+    height: 4px; 
+    margin: -1px;
+    background: #1A4341;
+    border-radius: 4px; 
+  }
+</style>
