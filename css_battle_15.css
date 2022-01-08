@@ -1,0 +1,60 @@
+<div id="k1"></div>
+<div id="k2"></div>
+<nav>
+  <main></main>
+</nav>
+<nav>
+  <main></main>
+</nav>
+<style>
+  :root{
+    --velicina: 150px;
+  }
+  body{
+    margin:0;
+    background: #09042A;
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+  	width: var(--velicina);
+    height: var(--velicina);
+    border-radius: 50%;
+  }
+  #k1{
+   	transform: translate(25px);
+    background: #7B3F61;
+  }
+  #k2{
+    transform: translate(-25px);
+    background: #E78481;
+  }
+  nav{
+    background: transparent;
+    border: 0px solid black;
+    box-sizing: border-box;
+   	position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-100%, -50%);
+    width: 25px;
+    height: var(--velicina);
+    z-index: 2;
+    overflow: hidden;
+  }
+  nav:nth-of-type(2){
+    transform: translate(0%, -50%);
+    
+  }
+  main{
+   	width: var(--velicina);
+    height: var(--velicina);
+    border-radius: 50%;
+    background: #09042A;
+  }
+    nav:nth-of-type(2) main{
+    overflow: schrool;
+    transform: translateX(-125px)
+  }
+</style>
