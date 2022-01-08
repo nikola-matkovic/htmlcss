@@ -1,0 +1,69 @@
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<nav></nav>
+<nav></nav>
+<nav></nav>
+<nav></nav>
+<style>
+  :root{
+    --velicina: 200px; 
+  }
+  body{
+    background : #1A4341;
+  }
+  div {
+    background: #F3AC3C;
+    width: var(--velicina);
+    height: var(--velicina);
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+  }
+  div:nth-of-type(2){
+    z-index: 100;
+    top: -50px;
+    left: initial;
+    right: 0px;
+  }
+   div:nth-of-type(3){
+    z-index: 100;
+    top: initial;
+    bottom: -50px;
+    left: 0px;
+  }
+div:nth-of-type(4){
+    z-index: 100;
+    top: initial;
+    bottom: -50px;
+    right: 0px;
+ 	left: initial;
+  }
+  nav{
+    background: #F3AC3C;
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  nav:nth-of-type(2){
+    top: initial;
+    bottom: 0;
+  }
+   nav:nth-of-type(3){
+    width: 100px;
+    height: 400px;	
+    top: 0;
+    left:0;
+  }
+ nav:nth-of-type(4){
+    width: 100px;
+    height: 400px;	
+    top: 0;
+    left:initial;
+   	right: 0;
+  }
+</style>
