@@ -1,0 +1,50 @@
+<div class="div vertikal gore"></div>
+<div class="div vertikal dole"></div>
+<div class="div horizontal desno"></div>
+<div class="div horizontal levo"></div>
+<style>
+  :root{
+    --h: 40px;
+    --w1: 130px;
+    --w2: 180px;
+  }
+  body{
+    background: #191919;
+    margin: 0;
+  }
+  div{
+    position: absolute;
+  }
+  .vertikal{
+    left: 50%;
+    top: 0px;
+    transform: translateX(-50%);
+    width: var(--h);
+    height: var(--w1);
+  	background: #FE5F55;
+    border-bottom-left-radius: calc(var(--h) / 2);
+    border-bottom-right-radius: calc(var(--h) / 2);
+  }
+  .dole{
+    top: initial;
+    bottom: 0px;
+    border-radius: 0px;
+    border-top-left-radius: calc(var(--h) / 2);
+    border-top-right-radius: calc(var(--h) / 2);
+  }
+  .horizontal{
+    top: 50%;
+    transform: translateY(-50%);
+    background: #A64942;
+    width: var(--w2);
+    height: var(--h);
+    border-top-right-radius: calc(var(--h) / 2);
+  	border-bottom-right-radius: calc(var(--h) / 2);
+  }
+  .desno{
+    right: 0;
+    border-radius: 0px;
+    border-top-left-radius: calc(var(--h) / 2);
+  	border-bottom-left-radius: calc(var(--h) / 2);
+  }
+</style>
