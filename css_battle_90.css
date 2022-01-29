@@ -1,0 +1,37 @@
+<div class="sredina"></div>
+<div class="donji"></div>
+<div class="gornji"></div>
+<style>
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3AC3C;
+  }
+  .sredina{
+    aspect-ratio: 1;
+    background: #1A4341;
+    width: 200px;
+    border-radius: 50%;
+    border: 25px solid #F3AC3C;
+    z-index: 2;
+  }
+  .donji{
+    position: absolute;
+    aspect-ratio: 1;
+    bottom: -250px;
+    width: 400px;
+    border-radius: 50%;
+    background: #998235;
+        z-index: 3;
+  }
+  .gornji{
+    position: absolute;
+    aspect-ratio: 1;
+    top: -250px;
+    width: 400px;
+    border-radius: 50%;
+    background: #998235;
+  }
+  }
+</style>
