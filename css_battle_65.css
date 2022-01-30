@@ -1,0 +1,63 @@
+<div id="trougao"></div>
+<div id="desno">
+  <div id="kont">
+    <div id="krug"></div>
+  </div></div>
+<div id="kvadrat">
+</div>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  	background: #191919;
+  }
+  #trougao{
+    position: absolute;
+   	aspect-ratio: 1;
+    width: 140px; 
+    background: #5DBCF9;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    left: 50%
+  }
+  #desno{
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  #kvadrat{
+    position: absolute;
+    background: #5DBCF9;
+   	width: 60px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 50%;
+    left: 105px;
+    transform: translate(-50% ,-50%);
+    position: absolute;
+  }
+  #kont{
+    width: 175px;
+    height:100%;
+  	position: absolute;
+    top: 0;
+    right: 0;
+    background: #5DBCF9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: #191919;
+  }
+  #krug{
+    width: 80px;
+    aspect-ratio: 1;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #5DBCF9,   0 0 0 25px #191919, 0 0 0 35px #5DBCF9,   0 0 0 50px #191919, 0 0 0 60px #5DBCF9;  
+  }
+</style>
