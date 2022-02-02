@@ -1,0 +1,37 @@
+<div id="prvi"></div>
+<div id="drugi"></div>
+<div id="treci"></div>
+<div id="cetvrti"></div>
+<style>
+  body{
+    background:#F2F2B6;
+    margin: 0;
+  }
+  #prvi, #drugi, #treci, #cetvrti {
+    width: 0px;
+    height: 0px;
+    border: solid;
+    border-color:  #FF6D00 transparent transparent transparent;
+    border-width: 130px 75px;
+    position: absolute;
+    top: 85px;
+    left : 60px;
+  }
+   #drugi {
+    border-color:  #FD4602 transparent transparent transparent;
+    left : 80px;
+    z-index: -1;
+  }
+  #treci, #cetvrti{
+    transform: rotate(180deg);
+  }
+  #treci{
+	top: -45px;
+    left: 190px;
+  }
+  #cetvrti{
+    top: -45px;
+    left: 170px;
+    border-color:  #FD4602 transparent transparent transparent;
+  }
+</style>
