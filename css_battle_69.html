@@ -1,0 +1,46 @@
+<div id="prvi"><div><div></div></div></div>
+<div id="drugi"><div><div></div></div></div>
+<style>
+  body{
+    background: #191919;
+  }
+
+  #prvi{
+    position: absolute;
+    top: 76px;
+    left: 85px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 118px;
+    box-sizing: border-box;
+    border: 13px solid #E08027;
+  }
+  #drugi{
+    position: absolute;
+    top: 76px;
+    right: 85px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 118px;
+    box-sizing: border-box;
+    border: 13px solid #E08027;
+    box-shadow: 0 0 0 10px #191919;
+  }
+  #prvi div, #drugi div{
+    width: 100%;
+    height: 50%;
+    width: 100%;
+    overflow: hidden; 
+  	display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    transform: translateY(5px);
+  }
+  #prvi div div, #drugi div div{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 10px solid #E08027;
+    transform: translateY(50%);
+  }
+</style>
