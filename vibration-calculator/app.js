@@ -7,9 +7,9 @@ button.addEventListener("mouseup", up);
 button.addEventListener("dblclick", reset);
 
 function down(){
-    console.log("im down");
     timerInterval = setInterval(function(){
         //unos za 
+        console.log(i, j);
         if(part === 1){
             m++;
         }
@@ -17,34 +17,37 @@ function down(){
             n++;
         }
         else if(part === 3){
-            matrix[i][j]++;
-            console.log(matrix);
+            console.log(m, n, i , j)
+            matrix[i][j] = 1;
         }
     }, 300);
 }
 
 function up(){ 
+    
+    //briše interval
+    clearInterval(timerInterval);
+
     //kada sazna m, podesi  template matrice 
     if(part == 1){
         for(i = 0; i<m; i++){
             matrix[i] = [];
         }
-        console.log("ovde", matrix);
-    }
-    if(part<=2){
+        i++;
         part++;
-    }else if(part<3){
-        console.log("daaaa"+part);
+    }
+    //kada sazna n, pravi praznu matricu (sa nulama)
+    else if(part==2){
         part++;
         for(i=0; i<m; i++){
             for(j=0; j<n; j++){
                 matrix[i][j]=0;
-                console.log(matrix);
             }
         }
-        i=0; 
+        i = 0;
         j=0;
     }
+    //Unos brojeva 
     else if(part==3){
         if(j<n){
             j++;
@@ -55,11 +58,8 @@ function up(){
         }
         if(i==m){
             part++;
-            console.log(matrix);
         }
     }
-    console.log(`part ${part}, m ${m}, n${n}, matrix ${matrix} `);
-    clearInterval(timerInterval);
 }
 
 function reset(){
