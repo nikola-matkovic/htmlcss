@@ -1,0 +1,9 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    width: 100vw;
+    height: 100vh;
+}
