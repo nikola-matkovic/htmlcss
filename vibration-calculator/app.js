@@ -9,7 +9,7 @@ function down(){
     console.log("im down");
     timerInterval = setInterval(function(){
         timer += 1;
-        navigator.vibrate(200);
+        navigator.vibrate(100);
     }, 300);
 }
 
