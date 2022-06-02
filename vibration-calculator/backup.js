@@ -16,17 +16,17 @@ function down(){
             m++;
         }
         else if(part === 2){
-            navigator.vibrate(100);
+            navigator.vibrate(400);
             n++;
         }
         else if(part === 3){
-            navigator.vibrate(100);
+            navigator.vibrate(400);
             t++;
         }
         else if(part === 4){
             operation++;
         }
-    }, 200);
+    }, 1000);
 }
 
 function up(){ 
@@ -64,8 +64,10 @@ function up(){
         }
         if(i==m){
             part++;
+            print();
+        }else{
+            matrix[i][j] = t;
         }
-        matrix[i][j] = t;
     }
     else if(part==4){
         part++;
@@ -74,11 +76,15 @@ function up(){
 
 function print(){
     s+="<table>";
-
     for(i=0; i<m; i++){
+        s+="<tr>"
         for(j=0; j<n; j++){
+            s+= "<td> " + matrix[i][j] + "</td>";
         }
+        s+="</tr>"
     }
+    s+="</table>";
+    document.getElementById("cont").innerHTML= s;
 }
 
 function reset(){

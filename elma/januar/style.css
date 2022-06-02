@@ -1,0 +1,23 @@
+
+main{
+    display: flex;
+    justify-content: space-between;
+    min-height:  100vh;
+}
+
+#left, #right {
+    width: 300px;
+}
+
+#center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
