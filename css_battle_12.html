@@ -1,0 +1,45 @@
+<div>
+    <nav></nav>
+    <nav></nav>
+  </div>
+  <style>
+    body{background: #191919;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    div {
+      --w :120px;
+      width: var(--w);
+      height: 120px;
+      border-top-left-radius: calc(var(--w) / 2);
+       border-top-right-radius: calc(var(--w) / 2);
+        background: #E08027;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  
+      nav{
+      position: relative;
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: #F2AD43;
+      display: block;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    nav:first-of-type {
+      transform: translateY(-50%);
+    }
+    nav:last-of-type {
+      transform: translateY(50%);
+      background: #824B20;
+    }
+  </style>
