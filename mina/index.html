@@ -33,6 +33,20 @@
         border-bottom: 3px solid black;
         padding: 20px ;
     }
+    #main {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right img {
+        width: 500px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer img{
+        width: 300px;
+    }
     </style>
 </head>
 <body>
@@ -57,15 +71,27 @@
         </div>
         <div class="middle">
             <div class="unos">
-
+                <div>unesite korisničko ime</div>
+                <input type="text">
             </div>
             <div class="unos">
-
+                <div>unesite šifru</div>
+                <input type="password">
             </div>
             <div class="unos">
-                
+                <div>aploadujete fotografiju </div>
+                <input type="file">
             </div>
+            <button>Prosledi</button>
         </div>
+        <div class="right">
+            <img src="dunp.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div><img src="akm.png" alt=""></div>
+        <div><img src="akm.png" alt=""></div>
+        <div><img src="akm.png" alt=""></div>
     </div>
 </body>
 </html>
