@@ -11,8 +11,8 @@ svg.addEventListener("click",  (e)  => {
     const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink']; 
     const random2 = () => colors[Math.floor(Math.random() * colors.length)]
     document.documentElement.style.cssText = `
-    --dark-color :  ${ typeof random() === 'function' ? random() : random2() };
-    --light-color : ${ typeof random() === 'function' ? random() : random2() };
+    --dark-color :  ${ typeof random() == 'function' ? random() : random2() };
+    --light-color : ${ typeof random() == 'function' ? random() : random2() };
     `
 
 });
