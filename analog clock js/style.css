@@ -1,0 +1,146 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+#cont{
+    aspect-ratio: 1;
+    width: 85vmin;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid black;
+    outline: 5px solid gray;
+    outline-offset: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#dot{
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #000;
+}
+#sec{
+    position: absolute;
+    width: 6px ;
+    height: 45%;
+    background-color: red;
+    top: 5%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    border-radius: 3px;
+    z-index: 3;
+}
+
+#min{
+    position: absolute;
+    width: 6px ;
+    height: 40%;
+    background-color: rgb(0, 0, 0);
+    top: 10%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    border-radius: 3px;
+    z-index: 2;
+}
+
+#hour{
+    position: absolute;
+    width: 10px ;
+    height: 35%;
+    background-color: rgb(0, 0, 0);
+    top: 15%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+.number{
+    position: absolute;
+    height: 48%;
+    background-color: transparent;
+    top: 2%;
+    transform-origin: bottom;
+    border-radius: 3px;
+    font-size: 2rem;
+}
+.number span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#one {
+    transform: rotate(30deg);
+}
+#one span{
+    transform: rotate(-30deg);
+}
+#two {
+    transform: rotate(60deg);
+}
+#two span{
+    transform: rotate(-60deg);
+}
+#three {
+    transform: rotate(90deg);
+}
+#three span{
+    transform: rotate(-90deg);
+}
+#four {
+    transform: rotate(120deg);
+}
+#four span{
+    transform: rotate(-120deg);
+}
+#five {
+    transform: rotate(150deg);
+}
+#five span{
+    transform: rotate(-150deg);
+}
+#six {
+    transform: rotate(180deg);
+}
+#six span{
+    transform: rotate(-180deg);
+}
+#seven {
+    transform: rotate(210deg);
+}
+#seven span{
+    transform: rotate(-210deg);
+}
+#eight {
+    transform: rotate(240deg);
+}
+#eight span{
+    transform: rotate(-240deg);
+}
+#nine {
+    transform: rotate(270deg);
+}
+#nine span{
+    transform: rotate(-270deg);
+}
+#ten {
+    transform: rotate(300deg);
+}
+#ten span{
+    transform: rotate(-300deg);
+}
+#eleven {
+    transform: rotate(330deg);
+}
+#eleven span{
+    transform: rotate(-330deg);
+}
