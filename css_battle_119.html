@@ -1,0 +1,76 @@
+<div id="white-cont">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+<div id="player"></div>
+<div id="enemy">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<style>
+  body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #white-cont{
+    width: 70px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dot{
+    width: 10px;
+    height: 10px;
+    background: white;
+  	border-radius: 50%;
+  }
+  #player{
+   	background: #E0E246;
+    width: 60px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  	border-radius: 50%;
+    left: 60px;
+  }
+  #player::after{
+    content:"";
+    position: absolute;
+    display: block;
+    width: 40px;
+	aspect-ratio:1;
+    background: black;
+    right: -16px;
+    transform: rotate(45deg);
+  	top: 10px;
+  }
+  #enemy{
+   	position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #C74E4E;
+    right: 60px;
+  	border-top-left-radius: 30px;
+  	border-top-right-radius: 30px;
+  }
+  #enemy >div {
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    bottom: -12px;
+    transform: rotate(45deg);
+  }
+  #enemy > div:nth-child(2) {
+    left: 20px;
+  }
+  #enemy > div:nth-child(3) {
+    left: 40px;
+  }
+</style>
