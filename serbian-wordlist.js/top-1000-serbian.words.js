@@ -1,5 +1,5 @@
-let latin = "A B V G D Đ E Ž Z I J K L LJ M N NJ O P R S T Ć U F H C Č DŽ Š a b v g d đ e ž z i j k l lj m n nj o p r s t ć u f h c č dž š"
-let cyrilic = "А Б В Г Д Ђ Е Ж З И Ј К Л Љ М Н Њ О П Р С Т Ћ У Ф Х Ц Ч Џ Ш а б в г д ђ е ж з и ј к л љ м н њ о п р с т ћ у ф х ц ч џ ш"
+let latin = "A B V W G D Đ E Ž Z I J K L LJ M N NJ O P R S T Ć U F H C Č DŽ Š a b v w g d đ e ž z i j k l lj m n nj o p r s t ć u f h c č dž š"
+let cyrilic = "А Б B В Г Д Ђ Е Ж З И Ј К Л Љ М Н Њ О П Р С Т Ћ У Ф Х Ц Ч Џ Ш а б в в г д ђ е ж з и ј к л љ м н њ о п р с т ћ у ф х ц ч џ ш"
 
 latin = latin.split(" ");
 cyrilic = cyrilic.split(" ");
@@ -1028,12 +1028,17 @@ words = words.filter( (word, index) =>  {
         // proveriti da li se isto piše ćirilicom i latinicom
         let recLatinicom = words[index+1];
         let recCirilicom = L2C(recLatinicom);
-        if(recCirilicom != word){
+
+        if(word == "фоллов"){
+            console.log(word, recCirilicom, recLatinicom);
+        }
+
+        if(recCirilicom.toLowerCase() !== word.toLowerCase()){
             return true;
         }
     }
 })
-.join("|");
+console.log(words.length);
 
-console.log(words);
+words = words.join("|");
 
