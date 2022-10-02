@@ -565,3 +565,25 @@ footer i::before {
     height: 35px;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 900px) {
+    .book form {
+        display: flex;
+        flex-direction: column;
+    }
+    .specials .cont {
+        flex-direction: column-reverse;
+    }
+    .specials .cont .left {
+        width: 100%;
+        flex-direction: column;
+    }
+    .specials .cont .right {
+        width: 100%;
+        flex-direction: column;
+    }
+    .specials .cont .right .text {
+        height: auto;
+        width: 100%;
+    }
+}
