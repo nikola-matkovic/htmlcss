@@ -613,4 +613,7 @@ footer i::before {
     .secound {
         grid-template-columns: 1fr;
     }
+    .secound .image img {
+        width: 100%;
+    }
 }
