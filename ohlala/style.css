@@ -90,7 +90,19 @@ header .arrows {
     left: 0;
     display: flex;
     justify-content: space-between;
+    pointer-events: none;
     align-items: center;
+}
+
+header .arrows > div {
+    background: rgba(31, 31, 31, 0.638);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(230, 230, 230);
 }
 header .arrows #left-arrow {
     translate: 50px;
