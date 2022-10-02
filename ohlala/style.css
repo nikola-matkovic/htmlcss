@@ -323,3 +323,59 @@ section > h2 + p {
     justify-content: space-between;
     height: 150px;
 }
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #faf6f0;
+    padding-inline: min(10vw, 200px);
+    padding-top: 20px;
+}
+.book form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    background: white;
+    box-shadow: 0 0 5px 2px rgb(199, 199, 199);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.book form input,
+.book form input:focus {
+    padding: 0 20px;
+    height: 40px;
+    border: 2px solid rgb(221, 221, 221);
+    outline: 0;
+    font-size: 15px;
+}
+.book form textarea,
+.book form textarea:focus {
+    grid-column: 1/4;
+    padding: 20px;
+    border: 2px solid rgb(221, 221, 221);
+    outline: 0;
+    font-size: 15px;
+    height: 120px;
+}
+
+.book form .button {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book form button {
+    grid-column: 2/3;
+    outline: 0;
+    border: 0;
+    height: 50px;
+    color: white;
+    background-color: var(--color);
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 0 30px;
+    font-weight: bold;
+}
