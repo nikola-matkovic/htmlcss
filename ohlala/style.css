@@ -8,6 +8,14 @@
 :root {
     --color: #fbab3d;
 }
+body {
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: italic-font;
+    src: url("./font/Bulgary\ Regular.otf");
+}
 header {
     background-image: url("./images/woman-in-restorant.jpg");
     height: 700px;
@@ -19,12 +27,19 @@ header {
 }
 header .background {
     padding-inline: min(10vw, 200px);
-    padding-block: 20px;
+    padding-block: 10px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+.logo {
+    font-size: 3rem;
+    font-style: italic;
+    font-family: italic-font;
+    font-weight: 400;
+}
+
 header .info {
     display: flex;
     gap: 40px;
@@ -33,6 +48,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 }
 header nav ul {
     list-style-type: none;
@@ -44,6 +60,7 @@ header nav ul li:first-child {
     color: var(--color);
     font-size: 1.1rem;
 }
+
 header nav ul li:last-child {
     background-color: var(--color);
     height: 35px;
@@ -66,6 +83,21 @@ header .main-header {
     flex-direction: column;
     gap: 30px;
 }
+header .main-header h1 * {
+    font-family: italic-font;
+    font-size: 6rem;
+    font-weight: 300;
+    font-style: italic;
+}
+header .main-header h1 span:first-child {
+    color: var(--color);
+}
+
+header .main-header p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
 header .main-header .links {
     display: flex;
     justify-content: center;
@@ -81,6 +113,7 @@ header .main-header .links div {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 header .arrows {
     width: 100%;
@@ -159,6 +192,8 @@ section {
     align-items: center;
     width: 100%;
     height: 100%;
+    color: white;
+    font-size: 2rem;
 }
 .secound .image .play i {
     display: block;
@@ -175,6 +210,16 @@ section {
     color: rgb(62, 62, 62);
     font-weight: 500;
 }
+.secound h2 i,
+.secound h2 i b {
+    font-size: 4rem;
+    font-family: italic-font;
+    font-weight: 300;
+}
+.secound h2 i b {
+    font-weight: 600;
+}
+
 .secound h2 b {
     color: rgb(62, 62, 62);
     font-weight: 900;
@@ -210,6 +255,12 @@ section > h2 + p {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+.third-section h2 {
+    font-family: italic-font;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 .third-section .cards {
@@ -249,6 +300,13 @@ section > h2 + p {
     flex-direction: column;
     padding-inline: min(10vw, 200px);
 }
+.menu h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: italic-font;
+}
+
 .menu .buttons {
     margin-top: 20px;
     display: flex;
@@ -300,6 +358,14 @@ section > h2 + p {
     flex-direction: column;
     padding-inline: min(10vw, 200px);
 }
+
+.specials h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: italic-font;
+}
+
 .specials .cont {
     margin-top: 40px;
     display: flex;
@@ -308,7 +374,7 @@ section > h2 + p {
     gap: 20px;
 }
 .specials .cont .left {
-    width: 400px;
+    width: 420px;
     display: flex;
     flex-direction: column;
     height: 200px;
@@ -347,6 +413,14 @@ section > h2 + p {
     padding-inline: min(10vw, 200px);
     padding-top: 20px;
 }
+.book h2,
+.chefs h2 {
+    font-family: italic-font;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
 .book form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
