@@ -586,4 +586,14 @@ footer i::before {
         height: auto;
         width: 100%;
     }
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    .chefs .cards {
+        flex-direction: column;
+    }
+    .chefs .background .cards .card {
+        width: 100%;
+        height: 500px;
+    }
 }
