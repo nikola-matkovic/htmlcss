@@ -616,4 +616,11 @@ footer i::before {
     .secound .image img {
         width: 100%;
     }
+    .menu .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu .buttons div {
+        width: 100%;
+    }
 }
