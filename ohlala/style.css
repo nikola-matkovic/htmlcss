@@ -420,3 +420,18 @@ section > h2 + p {
     flex-direction: column;
     color: rgb(61, 61, 61);
 }
+footer {
+    width: 100%;
+    height: 100px;
+    background: #393630;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+footer h3 {
+    font-size: 1.2rem;
+    color: var(--color);
+    font-style: italic;
+}
