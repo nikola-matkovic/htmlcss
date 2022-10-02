@@ -194,17 +194,19 @@ section > h2 + p {
 
 .third-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
 .third-section .cards {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
     align-items: center;
     padding-block-start: 30px;
+    padding-inline: min(10vw, 200px);
 }
 .third-section .cards .card {
     max-width: 350px;
@@ -225,4 +227,99 @@ section > h2 + p {
 }
 .third-section .cards .card p {
     color: rgb(133, 133, 133);
+}
+.menu {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: min(10vw, 200px);
+}
+.menu .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.menu .buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: 2px solid #c28a3c;
+}
+.menu .buttons div:first-child {
+    color: white;
+    background: var(--color);
+    border: 0;
+}
+.menu-grid {
+    margin-top: 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.menu-grid .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-grid .top hr {
+    flex: 1;
+}
+.menu-grid .top h4 {
+    color: var(--color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.specials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: min(10vw, 200px);
+}
+.specials .cont {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    gap: 20px;
+}
+.specials .cont .left {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.specials .cont .left h4 {
+    height: 100%;
+    border-right: 3px solid rgb(182, 181, 181);
+}
+.specials .cont .left h4:first-child {
+    border-right: 3px solid var(--color);
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.right img {
+    border-radius: 50%;
+}
+
+.right .text {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
 }
