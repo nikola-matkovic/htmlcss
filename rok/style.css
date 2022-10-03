@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 0 50px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+nav img {
+    max-height: 70px;
+}
+nav .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
