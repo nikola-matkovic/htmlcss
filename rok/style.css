@@ -27,6 +27,10 @@ nav .right {
     align-items: center;
 }
 
+section:not(:first-child) {
+    margin-top: 40px;
+}
+
 #first-section {
     display: flex;
     justify-content: space-between;
@@ -81,4 +85,12 @@ form button {
 
 #first-section .right img {
     max-width: 90%;
+}
+#third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: max(600px, 60%);
 }
