@@ -107,5 +107,5 @@ table {
 }
 footer {
     height: 50px;
-    padding: 20px min(300px, 20vh);
+    padding: 20px max(300px, 20vh);
 }
