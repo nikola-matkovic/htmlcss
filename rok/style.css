@@ -23,3 +23,8 @@ nav .right {
     justify-content: center;
     align-items: center;
 }
+#first-section .left ul {
+    margin-top: 30px;
+    list-style-type: none;
+}
+#first-section .left ul {
