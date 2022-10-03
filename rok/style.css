@@ -94,3 +94,13 @@ form button {
 table {
     width: max(600px, 60%);
 }
+#secound-section {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10vw;
+    gap: 5vw;
+}
+#secound-section img {
+    width: 10vw;
+    height: 30vw;
+}
