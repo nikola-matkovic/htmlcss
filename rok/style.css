@@ -72,3 +72,13 @@ form button {
     height: 50px;
     border: 2px solid black;
 }
+#first-section .right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+#first-section .right img {
+    max-width: 90%;
+}
