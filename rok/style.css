@@ -81,6 +81,7 @@ form button {
     justify-content: center;
     align-items: flex-end;
     height: 100%;
+    min-width: 300px;
 }
 
 #first-section .right img {
@@ -103,4 +104,8 @@ table {
 #secound-section img {
     width: 10vw;
     height: 30vw;
+}
+footer {
+    height: 50px;
+    padding: 20px min(300px, 20vh);
 }
