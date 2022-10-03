@@ -23,8 +23,22 @@ nav .right {
     justify-content: center;
     align-items: center;
 }
+
+#first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #first-section .left ul {
     margin-top: 30px;
     list-style-type: none;
 }
-#first-section .left ul {
+#first-section .left ul li {
+    border-bottom: 2px solid black;
+    height: 70px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    width: 175px;
+}
