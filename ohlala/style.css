@@ -1,0 +1,626 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color: #fbab3d;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+
+@font-face {
+    font-family: italic-font;
+    src: url("./font/Bulgary\ Regular.otf");
+}
+header {
+    background-image: url("./images/woman-in-restorant.jpg");
+    height: 700px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    color: white;
+    position: relative;
+}
+header .background {
+    padding-inline: min(10vw, 200px);
+    padding-block: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.logo {
+    font-size: 3rem;
+    font-style: italic;
+    font-family: italic-font;
+    font-weight: 400;
+}
+
+header .info {
+    display: flex;
+    gap: 40px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header nav ul li:first-child {
+    color: var(--color);
+    font-size: 1.1rem;
+}
+
+header nav ul li:last-child {
+    background-color: var(--color);
+    height: 35px;
+    width: 200px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+header .main-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+header .main-header h1 * {
+    font-family: italic-font;
+    font-size: 6rem;
+    font-weight: 300;
+    font-style: italic;
+}
+header .main-header h1 span:first-child {
+    color: var(--color);
+}
+
+header .main-header p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+header .main-header .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header .main-header .links div {
+    padding-inline: 30px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+header .arrows {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    align-items: center;
+}
+
+header .arrows > div {
+    background: rgba(31, 31, 31, 0.638);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(230, 230, 230);
+}
+header .arrows #left-arrow {
+    translate: 50px;
+}
+header .arrows #right-arrow {
+    translate: -50px;
+}
+.dashes {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.dash {
+    width: 40px;
+    height: 3px;
+    background-color: rgb(133, 133, 133);
+}
+.dash:first-child {
+    background-color: rgb(244, 244, 244);
+}
+section {
+    margin-top: 60px;
+}
+
+.secound {
+    padding-inline-end: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5vw;
+    background-color: #fff4e4;
+    padding-bottom: 40px;
+}
+
+.secound .image {
+    position: relative;
+    height: fit-content;
+}
+
+.secound .image img {
+    width: 620px;
+    max-width: 100%;
+}
+.secound .image .play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+}
+.secound .image .play i {
+    display: block;
+    width: 75px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--color);
+}
+
+.secound h2 {
+    color: rgb(62, 62, 62);
+    font-weight: 500;
+}
+.secound h2 i,
+.secound h2 i b {
+    font-size: 4rem;
+    font-family: italic-font;
+    font-weight: 300;
+}
+.secound h2 i b {
+    font-weight: 600;
+}
+
+.secound h2 b {
+    color: rgb(62, 62, 62);
+    font-weight: 900;
+}
+.secound p {
+    margin-block: 20px;
+}
+.secound ul {
+    list-style-type: none;
+}
+.secound ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+section h2 {
+    font-style: italic;
+    font-size: 2rem;
+}
+section h2 span {
+    color: var(--color);
+}
+
+section > h2 + p {
+    color: rgb(36, 36, 36);
+    margin: 10px;
+}
+
+.third-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.third-section h2 {
+    font-family: italic-font;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.third-section .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding-block-start: 30px;
+    padding-inline: min(10vw, 200px);
+}
+.third-section .cards .card {
+    max-width: 350px;
+    height: 220px;
+    padding: 20px;
+    box-shadow: 0 1px 5px 2px rgb(175, 175, 175);
+}
+
+.third-section .cards .card h3 {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.third-section .cards .card h3:first-child {
+    color: var(--color);
+    font-size: 2rem;
+    font-style: normal;
+}
+.third-section .cards .card p {
+    color: rgb(133, 133, 133);
+    font-size: 0.9rem;
+}
+.menu {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: min(10vw, 200px);
+}
+.menu h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: italic-font;
+}
+
+.menu .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.menu .buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: 2px solid #c28a3c;
+}
+.menu .buttons div:first-child {
+    color: white;
+    background: var(--color);
+    border: 0;
+}
+.menu-grid {
+    margin-top: 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.menu-grid .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-grid .top hr {
+    flex: 1;
+}
+.menu-grid .top h4 {
+    color: var(--color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.specials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: min(10vw, 200px);
+}
+
+.specials h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: italic-font;
+}
+
+.specials .cont {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    gap: 20px;
+}
+.specials .cont .left {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.specials .cont .left h4 {
+    height: 100%;
+    border-right: 3px solid rgb(182, 181, 181);
+}
+.specials .cont .left h4:first-child {
+    border-right: 3px solid var(--color);
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.right img {
+    border-radius: 50%;
+    width: 100%;
+    min-width: 300px;
+}
+
+.right .text {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #faf6f0;
+    padding-inline: min(10vw, 200px);
+    padding-top: 20px;
+}
+.book h2,
+.chefs h2 {
+    font-family: italic-font;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.book form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    background: white;
+    box-shadow: 0 0 5px 2px rgb(199, 199, 199);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.book form input,
+.book form input:focus {
+    padding: 0 20px;
+    height: 40px;
+    border: 2px solid rgb(221, 221, 221);
+    outline: 0;
+    font-size: 15px;
+}
+.book form textarea,
+.book form textarea:focus {
+    grid-column: 1/4;
+    padding: 20px;
+    border: 2px solid rgb(221, 221, 221);
+    outline: 0;
+    font-size: 15px;
+    height: 120px;
+}
+
+.book form .button {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book form button {
+    grid-column: 2/3;
+    outline: 0;
+    border: 0;
+    height: 50px;
+    color: white;
+    background-color: var(--color);
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+.chefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./images/dish.jpg");
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.chefs .background {
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.chefs .background .cards {
+    margin-top: 20px;
+    padding-inline: min(10vw, 200px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.chefs .background .cards .card {
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+    height: 400px;
+}
+.chefs .background .cards img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 2px 3px rgb(183, 183, 183);
+}
+.chefs .background .cards .infos {
+    position: absolute;
+    width: 80%;
+    background: white;
+    left: 10%;
+    height: 110px;
+    bottom: 40px;
+    box-shadow: 0px 0px 10px 1px rgba(63, 63, 63, 0.599);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(61, 61, 61);
+}
+.chefs .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer {
+    width: 100%;
+    height: 130px;
+    background: #393630;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+footer h3 {
+    font-size: 1.2rem;
+    color: var(--color);
+    font-style: italic;
+}
+.price {
+    font-weight: bold;
+}
+footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer i {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer i::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4b4740;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .book form {
+        display: flex;
+        flex-direction: column;
+    }
+    .specials .cont {
+        flex-direction: column-reverse;
+    }
+    .specials .cont .left {
+        width: 100%;
+        flex-direction: column;
+    }
+    .specials .cont .right {
+        width: 100%;
+        flex-direction: column;
+    }
+    .specials .cont .right .text {
+        height: auto;
+        width: 100%;
+    }
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    .chefs .cards {
+        flex-direction: column;
+    }
+    .chefs .background .cards .card {
+        width: 100%;
+        height: 500px;
+    }
+    .third-section .cards {
+        flex-direction: column;
+    }
+    .third-section .cards .card {
+        width: 100%;
+        max-width: unset;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+    .secound {
+        grid-template-columns: 1fr;
+    }
+    .secound .image img {
+        width: 100%;
+    }
+    .menu .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu .buttons div {
+        width: 100%;
+    }
+}

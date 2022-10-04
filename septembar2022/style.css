@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div div {
     width: 500px;
     height: auto;
@@ -5,10 +6,13 @@ div div {
     border: 3px solid black;
 }
 
+=======
+>>>>>>> 5b2fd8475ccdd0f27d867f2504a77395580c8571
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     margin: 5px;
 }
 .left{
@@ -44,4 +48,10 @@ main{
 }
 .right, .left  {
     margin: 0  20px;
+=======
+}
+
+body{
+    min-height: 100vh;
+>>>>>>> 5b2fd8475ccdd0f27d867f2504a77395580c8571
 }
