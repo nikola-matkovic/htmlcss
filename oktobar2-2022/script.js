@@ -14,7 +14,7 @@ let ucenik4 = new Ucenik("Emela", "Tahirović", 9.99, "https://thumbs.dreamstime
 const ucenici = [ucenik1, ucenik2, ucenik3, ucenik4]
 const table = document.querySelector("#table")
 
-let html;
+let html = "";
 
 ucenici.forEach(ucenik => {
     html += `
@@ -27,4 +27,4 @@ ucenici.forEach(ucenik => {
     `
 })
 
-table.innerHTML = table.innerHTML + html;
+table.innerHTML =  html;
