@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("slike/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 1000px;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+.header img {
+    width: 50px;
+}
+.center {
+    background-color: #626262;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right,
+.right a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.top {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.top a {
+    color: white;
+    text-decoration: none;
+}
+.image {
+    width: 100%;
+}
