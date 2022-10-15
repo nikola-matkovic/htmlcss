@@ -1,0 +1,19 @@
+table,
+tr,
+td,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: gray;
+}
+td img {
+    width: 100px;
+    height: 75px;
+}
+
+td {
+    min-width: 150px;
+}
