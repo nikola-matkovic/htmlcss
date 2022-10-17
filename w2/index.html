@@ -5,16 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="style.css" />
         <title>Vežbe dva</title>
     </head>
@@ -22,18 +24,135 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-12 col-sm-6">
-                    <p>Ovo je prvi paragraf</p>
+                    <p class="text-primary">Ovo je prvi paragraf</p>
                 </div>
                 <div class="col-md-4 col-12 col-sm-6">
                     <img
-                        src="https://scontent.fbeg8-1.fna.fbcdn.net/v/t1.6435-9/123773983_1389540231216353_682506231374771911_n.png?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=d9qxWAnkw5cAX-vMQnQ&_nc_ht=scontent.fbeg8-1.fna&oh=00_AT_X0_XGMDBQhqilFJOKmJLHDvifqhj_cgFhzTzh-rZKmQ&oe=63721ED9"
+                        src="https://assets.stickpng.com/images/6011a71e1b7ff00004506b10.png"
                         alt=""
+                        class="img-fluid"
                     />
                 </div>
                 <div class="col-md-4 col-12 col-sm-6">
-                    <h1>Naslov u trećem divu</h1>
+                    <h1 class="text-danger">Naslov u trećem divu</h1>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-striped table-danger">
+                        <thead>
+                            <tr>
+                                <th>ime</th>
+                                <th>Prezime</th>
+                                <th>Prosek</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nikola</td>
+                                <td>Matković</td>
+                                <td>9.0</td>
+                            </tr>
+                            <tr>
+                                <td>Taarik</td>
+                                <td>Kučević</td>
+                                <td>8.0</td>
+                            </tr>
+                            <tr>
+                                <td>Dina</td>
+                                <td>Bećirović</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Osman</td>
+                                <td>Jejna</td>
+                                <td>8.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron">
+                        <h1 class="display-3">Obavešteje</h1>
+                        <hr class="my-2" />
+                        <p>Danas smo učili bootstrap v4. Primer jumbotron</p>
+                        <p class="lead">
+                            <a href="" class="btn btn-primary"> test </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div
+                        class="alert alert-warning alert-dismissible fade show"
+                        role="alert"
+                    >
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="alert"
+                            aria-label="Close"
+                        ></button>
+                        <strong>Greška</strong> Došlo je do greške
+                    </div>
+
+                    <script>
+                        var alertList = document.querySelectorAll(".alert");
+                        alertList.forEach(function (alert) {
+                            new bootstrap.Alert(alert);
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="btn btn-primary">Ovo je neki link</a>
+                </div>
+            </div>
+            <div class="card border-primary">
+                <img
+                    class="card-img-top"
+                    src="https://news.climate.columbia.edu/wp-content/uploads/2021/04/mark-koch-KiRlN3jjVNU-unsplash-637x425.jpeg"
+                    alt="Title"
+                />
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page"
+                        >Active</a
+                    >
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        href="#"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Dropdown</a
+                    >
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Another link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
