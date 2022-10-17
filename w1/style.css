@@ -55,12 +55,20 @@ footer {
     width: 200px;
     height: 200px;
 }
-.right img {
+.right-index img {
     width: 500px;
 }
-.right h1 {
+.right-index h1 {
     text-align: center;
 }
-.right p {
+.right-index p {
     padding: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form > * {
+    margin: 0 10px;
 }
