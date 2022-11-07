@@ -18,12 +18,8 @@ class  student {
     }
 }
 
-function najbolji(...studenti) {
-    let niz = []
-    studenti.forEach(student => niz.push(student.prosek))
-    console.log(niz);
-    return Math.max(niz);
-}
+
+let  najbolji = (...studenti)  => Math.max(...studenti.map(student => student.prosek));
 
 let student1 = new student("nikola", "Matković", "036016/21")
 
