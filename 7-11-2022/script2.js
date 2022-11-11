@@ -24,6 +24,15 @@ tarik.dodajOcenu(8)
 tarik.dodajOcenu(9)
 tarik.dodajOcenu(9)
 
+let nikola = new Student("Nikola", "Matković", "036016/21")
+
+nikola.dodajOcenu(10)
+nikola.dodajOcenu(10)
+nikola.dodajOcenu(9)
+nikola.dodajOcenu(6)
+nikola.dodajOcenu(8)
+nikola.dodajOcenu(8)
+
 // let  najbolji = (...studenti)  => Math.max(...studenti.map(student => student.prosek));
 
 // let voce = ["jabuka", "kruška", "banana"]
@@ -33,6 +42,41 @@ let povrce = ["pasulj", "krompir", "Kupus", "Paprika"]
 
 // let biljke = [...voce, ...povrce, "smrča", "ruža" ]
 
-console.log(Math.max(...[2, 3, 4, 5]))
+// console.log(Math.max(...[2, 3, 4, 5]))
 
-console.log(...povrce)
+// console.log(...povrce)
+
+
+// function saberi(...sabirci) {
+//     let zbir = 0;
+//     sabirci.forEach(sabirak => zbir += sabirak)
+//     return zbir;
+// }
+
+
+// console.log(saberi(1,2,3))
+
+function najbolji(...studenti) {
+    return Math.max(...studenti.map(student => student.prosek));
+}
+
+console.log(najbolji(tarik, nikola))
+
+let niz1 = [1, 2, 3, 4, 5]
+
+let faktorijali = niz1.map(function (broj) {
+    let faktorijalBroja = 1;
+    for (let i = broj; broj > 0; broj--){
+        faktorijalBroja *= broj;
+    }
+    return faktorijalBroja
+} )
+
+
+console.log(faktorijali)
+
+
+
+function predstaviSe(ime, prezime, godine) {
+    console.log(`Zoveš se ${ime} ${prezime} i ti si  ${godine > 18 ? `Punoletan` : `Maloletan`}`)
+}
