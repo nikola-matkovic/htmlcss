@@ -56,11 +56,11 @@ let povrce = ["pasulj", "krompir", "Kupus", "Paprika"]
 
 // console.log(saberi(1,2,3))
 
-function najbolji(...studenti) {
-    return Math.max(...studenti.map(student => student.prosek));
-}
+// function najbolji(...studenti) {
+//     return Math.max(...studenti.map(student => student.prosek));
+// }
 
-console.log(najbolji(tarik, nikola))
+// console.log(najbolji(tarik, nikola))
 
 let niz1 = [1, 2, 3, 4, 5]
 
@@ -77,6 +77,26 @@ console.log(faktorijali)
 
 
 
-function predstaviSe(ime, prezime, godine) {
+let predstaviSe = (ime, prezime, godine) => {
     console.log(`Zoveš se ${ime} ${prezime} i ti si  ${godine > 18 ? `Punoletan` : `Maloletan`}`)
 }
+
+function saberi(a, b) {
+    return a + b;
+}
+
+let saberi2 = (a, b) =>  a+b
+
+function kvadriraj(broj) {
+    return broj ** 2
+}
+
+let kvadriraj2 = broj => broj ** 2 
+
+console.log(kvadriraj2(5))
+
+predstaviSe("nikola", "matković", 20)
+
+
+let  najbolji = (...studenti) =>  Math.max(...studenti.map(student => student.prosek));
+console.log(najbolji(tarik, nikola))

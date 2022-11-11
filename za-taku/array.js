@@ -13,6 +13,9 @@ for (let i = 0; i < array.length; i++){
 
 let noviNiz = array.map(element => element ** 2)
 
+let noviNiz3 = array.map((element) => { return element ** 2 })
+
+
 console.log(noviNiz)
 
 
@@ -31,3 +34,7 @@ for (let i = 0; i < array.length; i++) {
         veciOd52.push(array[i])
     }
 }
+
+let auta = ["Bmw", "audi", "Mercedes"];
+
+auta.forEach((auto, index, niz) => console.log(index + 1 , auto))
