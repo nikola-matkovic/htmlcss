@@ -19,7 +19,9 @@ class  student {
 }
 
 
-let  najbolji = (...studenti)  => Math.max(...studenti.map(student => student.prosek));
+function najbolji(...studenti) {
+    return Math.max(...studenti.map(student => student.prosek))
+};
 
 let student1 = new student("nikola", "Matković", "036016/21")
 
