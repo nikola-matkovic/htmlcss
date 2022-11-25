@@ -1,0 +1,72 @@
+<div id="cont">
+    <div id="line-up"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+    <div class="dot dot1"></div>
+    <div class="dot dot2"></div>
+    <div class="cut cut1"></div>
+    <div class="cut cut2"></div>
+</div>
+<style>
+    body {
+        background: #e3516e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cont {
+        width: 180px;
+        height: 160px;
+
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #line-up {
+        height: 100%;
+        width: 40px;
+        background: #fade8b;
+    }
+    #top,
+    #bottom {
+        position: absolute;
+        top: 0px;
+        width: 100px;
+        height: 30px;
+        background: #fade8b;
+        border-radius: 20px;
+    }
+    #bottom {
+        bottom: 0;
+        top: unset;
+    }
+    .dot {
+        aspect-ratio: 1;
+        background: #fade8b;
+        width: 30px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .dot1 {
+        bottom: 0;
+        left: 0;
+    }
+    .dot2 {
+        top: 0;
+        right: 0;
+    }
+    .cut {
+        position: absolute;
+        width: 20px;
+        height: 100px;
+        background: #e3516e;
+        left: 55px;
+        border-radius: 10px;
+    }
+    .cut2 {
+        left: unset;
+        right: 55px;
+    }
+</style>
