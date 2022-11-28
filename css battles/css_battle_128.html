@@ -1,0 +1,61 @@
+<div id="cont">
+  <div class="first full"></div>
+  <div class="secound-cont">
+    <div class="secound">
+    </div>
+  </div>
+  <div class="third full"></div>
+</div>
+
+<style>
+  *{
+    position: relative;
+  }
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  background-color : #998235;
+}  
+#cont {
+  height: 100%;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.full{
+  height: 230px;
+  background: #0B2429;
+  width: 40px;
+}
+.first {
+  align-self: end;
+  z-index: 3;
+}
+.secound-cont{
+  position: absolute;
+  right: 0;
+  width: 125px;
+  height: 160px;
+  align-self: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transform: translateX(-3px);
+}
+
+.third{
+  z-index: 0;
+}
+.secound {
+  background: #FCBE5C;
+  width: 40px;
+  height: 185px;
+  transform: rotate(-20deg);
+}
+  
+</style>

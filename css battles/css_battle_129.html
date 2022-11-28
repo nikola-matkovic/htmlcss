@@ -1,0 +1,60 @@
+<div id="cont">
+    <div class="f-out">
+        <div class="f-in"></div>
+        <div class="f-in"></div>
+    </div>
+    <div class="s-out">
+        <div class="s-in"></div>
+        <div class="s-in"></div>
+    </div>
+    <div class="t-out">
+        <div class="t-in"></div>
+        <div class="t-in"></div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: #6592cf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cont {
+        width: 180px;
+        height: 140px;
+        position: relative;
+        overflow: hidden;
+    }
+    #cont > div {
+        width: 100px;
+        height: calc(100% + 10px);
+        position: absolute;
+    }
+    #cont > div > div {
+        width: 100%;
+        height: 50%;
+        border-top-right-radius: 40px 50px;
+        border-bottom-right-radius: 50px 40px;
+    }
+    .f-out {
+        z-index: 3;
+    }
+    .f-in {
+        background: #060f55;
+    }
+    .s-out {
+        z-index: 2;
+        left: 40px;
+    }
+    .s-in {
+        background: #2e3b9f;
+    }
+    .t-out {
+        z-index: 1;
+        left: 80px;
+    }
+    .t-in {
+        background: #515dbd;
+    }
+</style>
