@@ -1,4 +1,4 @@
-let addZeros = (n, d = 3) => [...new Array(d - n.toString().length).fill(0), ...n.toString().split("")].join("")
+let addZeros = (n, d = 3) => String(n).padStart(d, "0");
 
 let numberOfAnimals = (animals, digits) => {
     for (const [key, value] of Object.entries(animals)) {
