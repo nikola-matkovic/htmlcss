@@ -12,8 +12,8 @@ const srediNiz = (min, max, niz, duzina) => {
 dugmeElement.addEventListener("click", () => {
     let niz = nizElement.value.split(" ");
     let duzina = duzinaElement.valueAsNumber;
-    let zMin = zMaxElement.valueAsNumber;
-    let zMax = zMinElement.valueAsNumber;
+    let zMin = zMinElement.valueAsNumber;
+    let zMax = zMaxElement.valueAsNumber;
 
     if (niz.length !== duzina) {
         alert(`Molimo unesite niz dužine ${duzina} ili promenite dužinu niza`);
